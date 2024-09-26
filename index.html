@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBox</title>
     <link rel="stylesheet" href="pc.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -25,8 +27,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-   
-    <body>
+    <style>
+        /* Add some basic responsive styles */
+        @media screen and (max-width: 768px) {
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+            }
+            .dropdown1 {
+                position: static;
+            }
+            .content {
+                position: static;
+                display: none;
+            }
+            .dropdown1:hover .content {
+                display: flex;
+                flex-direction: column;
+            }
+            .parent2 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .childe {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+            .k {
+                flex-direction: column;
+                align-items: center;
+            }
+            .h1, .h2, .h3 {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+            .foot {
+                flex-direction: column;
+            }
+            .ft {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
     <header>
         <a class="logo" href="pc.html"><span style="color:#EEEEEE;">Byte</span >Box</a>
 <nav  class="navigation">
